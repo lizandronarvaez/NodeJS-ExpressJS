@@ -1,14 +1,13 @@
-console.clear()
-// Dependecias importadas del packageJSON
+// Dependecias importadas
 import Express from "express";
 import index from "./routes/index.js";
 import agregar from "./routes/agregar.js";
 import borrar from "./routes/borrar.js";
 
-// Declaracion de variables para 
+// Declaracion de variable para inicializar Express
 const app = Express()
 
-// Configurando de motores de plantillas
+// Configurando de motores de plantillas y la ruta
 app.set('views', './views')
 app.set('view engine', 'pug')
 
